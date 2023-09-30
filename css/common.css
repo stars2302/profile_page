@@ -1,0 +1,137 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yeongdo-Rg';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/Yeongdo-Rg.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+:root {
+  --base-unit: 30px;
+  --border-radius1: 5px;
+  --border-radius2: calc(var(--border-radius1)*2);
+  --border-radius3: calc(var(--border-radius1)*3);
+  
+  --white-color: #fff;
+  --balck-color: #000;
+  --blue: #6786C9;
+  --green: #00C667;
+  --orange: #EB7711;
+  --yellow: #FFDD55;
+  --font-color: #131313;
+
+  --font-title: 40px;
+  --font-XL: 32px;
+  --font-L: 24px;
+  --font-M: 20px;
+  --font-S: 16px;
+}
+
+/* reset */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  background: none;
+  border: none;
+}
+img,
+video {
+  vertical-align: bottom;
+}
+.hidden {
+  display: none;
+}
+
+
+body {
+  font-family: 'Pretendard-Regular';
+}
+
+.logo {
+  font-family: 'Yeongdo-Rg';
+  text-align: center;
+  font-size: 70px;
+  text-transform: uppercase;
+  margin: calc(var(--base-unit)*5) 0 var(--base-unit);
+  color: var(--white-color);
+}
+
+.common_bg {
+  background-color: #554E4E;
+}
+.yellow_bg {
+  background-color: var(--yellow);
+}
+.green_bg {
+  background-color: var(--green);
+}
+.blue_bg {
+  background-color: var(--blue);
+}
+.orange_bg {
+  background-color: var(--orange);
+}
+.black_bg {
+  background-color: var(--balck-color);
+}
+
+.shadow_1 {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.shadow_10 {
+  box-shadow: 6px 6px 4px 0px var(--balck-color);
+}
+
+.radius_x1 {
+  border-radius: var(--border-radius1);
+}
+.radius_x2 {
+  border-radius: var(--border-radius2);
+}
+.radius_x3 {
+  border-radius: var(--border-radius3);
+}
+
+.font_title {
+  font-size: var(--font-XL);
+  font-weight: 600;
+}
+.font_XL {
+  font-size: var(--font-XL);
+}
+.font_L {
+  font-size: var(--font-L);
+}
+.font_M {
+  font-size: var(--font-M);
+}
+.font_S {
+  font-size: var(--font-S);
+}
+
+/* common only */
+.common_title {
+  font-size: 30px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+}
+
+.radius div{
+  background-color: #554E4E;
+}
+/* //common only */
