@@ -1,5 +1,8 @@
 .container.yellow_bg {padding: 0;}
 
+
+
+/* -------- header -------- */
 .header {
   height: calc(var(--base-unit)*2.5);
   border-radius: 0 0 var(--border-radius3) var(--border-radius3);
@@ -12,36 +15,38 @@
 }
 
 .header li {
-  width: 25%;
-  text-align: center;
+  overflow: hidden;
 }
 
 .header li a {
-  padding: 0 40px;
-  border-radius: var(--border-radius1);
-  line-height: calc(var(--base-unit)*1.5);
-  height: calc(var(--base-unit)*1.5);
-  display: block;
   color: var(--white-color);
   text-transform: uppercase;
-  transform: rotateX(0deg);
+  position: relative;
+  transition: top .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  top: 0;
 }
 
-.header li a:hover {
-  animation: filpX 0.3s forwards;
+.header li:hover a,
+.header li.active a {
+  top: -22px;
+  color: var(--blue);
 }
 
-@keyframes filpX {
-  0% {transform: rotateX(-90deg);}
-  50% {transform: rotateX(10deg); background-color: var(--blue);}
-  75% {transform: rotateX(-10deg);background-color: var(--blue);}
-  85% {transform: rotateX(5deg);background-color: var(--blue);}
-  98% {transform: rotateX(-5deg);background-color: var(--blue);}
-  100% {transform: rotateX(0deg);background-color: var(--blue); }
+.header li a:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0; right: 0; top: 100%; bottom: -100%;
+  transition: .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+.header li:hover a:after {
+  top: 100%; bottom: -100%;
+}
+/* -------- // header -------- */
 
-/* aside_btns */
+
+
+/* -------- aside_btns -------- */
 .aside_btns {
   position: relative;
 }
@@ -51,7 +56,7 @@
   right: var(--base-unit);
 }
 
-.aside_btns .btns_wrap div {
+.aside_btns .btns_wrap a {
   width: calc(var(--base-unit)*2);
   height: calc(var(--base-unit)*2);
   display: flex;
@@ -62,6 +67,7 @@
   font-size: 34px;
 }
 
-.aside_btns .btns_wrap div + div {
+.aside_btns .btns_wrap a + a {
   margin-top: calc(var(--base-unit)/2);
 }
+/* -------- // aside_btns -------- */
