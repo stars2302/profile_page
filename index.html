@@ -8,12 +8,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css" integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
 <body class="common_bg">
   <h1 class="logo">portfolio</h1>
   <div class="container yellow_bg">
+    <!-- header -->
     <header class="header black_bg">
       <nav>
         <ul class="d-flex justify-content-around text-center align-items-center">
@@ -24,29 +28,227 @@
         </ul>
       </nav>
     </header>
+    <!-- //header -->
+
 
     <main>
-      <section class="intro" id="home"></section>
-      <section class="about" id="about">
-        <h2>왜 묘한 프론트엔드 개발자이죠?</h2>
-        
-        <article class="skills">
-          <h2>skills</h2>
-        </article>
+      <!-- home -->
+      <section class="home d-flex align-items-center" id="home">
+        <div class="coffee_cat col-4 offset-1 green_bg radius_x2 shadow_10">
+          <object>
+            <embed src="images/mew.svg" alt="커피잔을 들고있는 고양이">
+          </object>
+        </div>
+
+        <div class="text_box">
+          <p class="font_M bold">&lt; 묘한 프론트엔드 개발자 /&gt;</p>
+          <h2 class="font_XL">
+            환영합니다, <br>
+            I'm 나서영입니다.
+          </h2>
+        </div>
       </section>
-      <section class="site" id="site"></section>
+      <!-- //home -->
+
+
+      <!-- about -->
+      <section class="about" id="about">
+        <h2 class="font_title">about</h2>
+        <div class="about_content d-flex align-items-center">
+          <div class="text_box col-6 offset-1">
+            <h3 class="font_L">왜 묘한 프론트엔드 개발자이죠?</h3>
+            <p>
+              별다른 이유는 없습니다. 그냥 고양이를 좋아합니다. 아주 많이.
+              고양이는 꽤나 끈기가 있습니다. 자신이 하고 싶은건 집사를 포기한 척 속여서라도 해내려고 합니다.
+              그런 고양이의 습성을 닮아가고 있는 모양입니다. '안해안해!' 하다가도 뒤돌면 해내고 있습니다.
+            </p>
+            <p>
+              고양이 중에서도 닮은 고양이가 있다면... 글쎄요. 아무래도 저희 집 고양이 아닐까요..?
+              사람을 아주 좋아합니다. 정확히는 사람에게 도움을 주는 것을 좋아합니다.
+              그래서 도움이 될 수 있도록 노력하는 ‘노력형 천재’가 꿈입니다.
+            </p>
+          </div>
+
+          <div class="person col-4">
+            <object>
+              <embed src="images/person.svg" alt="단발머리 여성 캐릭터">
+            </object>
+          </div>
+        </div>
+        
+        <!-- skill -->
+        <article class="skills offset-1 col-10">
+          <h2 class="font_title">skills</h2>
+          <ul class="skill_list d-flex justify-content-between">
+            <li class="d-flex flex-column align-items-center" data-rate="95">
+              <div class="img d-flex align-items-center justify-content-center">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <span>html</span>
+            </li>
+            <li class="d-flex flex-column align-items-center" data-rate="95">
+              <div class="img d-flex align-items-center justify-content-center">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <span>css</span>
+            </li>
+            <li class="d-flex flex-column align-items-center" data-rate="70">
+              <div class="img d-flex align-items-center justify-content-center">
+                <i class="fa-brands fa-square-js"></i>
+              </div>
+              <span>javascript</span>
+            </li>
+            <li class="d-flex flex-column align-items-center" data-rate="80">
+              <div class="img d-flex align-items-center justify-content-center">
+                <img src="images/jquery_icon.png" alt="">
+              </div>
+              <span>jquery</span>
+            </li>
+            <li class="d-flex flex-column align-items-center" data-rate="60">
+              <div class="img d-flex align-items-center justify-content-center">
+                <i class="fa-brands fa-php"></i>
+              </div>
+              <span>php</span>
+            </li>
+            <li class="d-flex flex-column align-items-center" data-rate="90">
+              <div class="img d-flex align-items-center justify-content-center">
+                <i class="fa-brands fa-bootstrap"></i>
+              </div>
+              <span>bootstrap</span>
+            </li>
+            <li class="d-flex flex-column align-items-center" data-rate="30">
+              <div class="img d-flex align-items-center justify-content-center">
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <span>react</span>
+            </li>
+            <li class="d-flex flex-column align-items-center" data-rate="70">
+              <div class="img d-flex align-items-center justify-content-center">
+                <i class="fa-brands fa-figma"></i>
+              </div>
+              <span>figma</span>
+            </li>
+            <li class="d-flex flex-column align-items-center" data-rate="65">
+              <div class="img d-flex align-items-center justify-content-center">
+                <img src="images/abode_icon.png" alt="">
+              </div>
+              <span>adobe</span>
+            </li>
+          </ul>
+
+          <div class="progress">
+            <div class="bar_wrap col-11 d-flex">
+              <div class="bar black_bg"></div><span class="bold count">0%</span>
+            </div>
+          </div>
+        </article>
+        <!-- //skill -->
+      </section>
+      <!-- //about -->
+
+
+      <!-- site -->
+      <section class="site" id="site">
+        <h2 class="font_title">site</h2>
+        <!-- Slider main container -->
+        <div class="swiper col-10 offset-1 blue_bg shadow_10 radius_x3">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="slide_top d-flex">
+                <img src="" alt="" class="col-4 radius_x1">
+                <div class="text_box">
+                  <h3 class="font_L">1. PUDDING (사용자)</h3>
+                  <ul>
+                    <li>레거시 PHP 문법, MYSQL을 활용해 기획부터 데이터베이스 연결까지 모든 프로세스를 경험할 수 있었던 팀 프로젝트.</li>
+                    <li>특히 이벤트의 WORDLE 미니게임 구현으로 실력을 끌어올릴 수 있었음.</li>
+                    <li>구현 : 장바구니, 이벤트, 공지사항 페이지</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="slide_bottom d-flex flex-column">
+                <div class="lang d-flex">
+                  <h4 class="bold">사용언어</h4>
+                  <ul class="d-flex">
+                    <li>html</li>
+                    <li>css</li>
+                    <li>jquery</li>
+                    <li>bootstrap</li>
+                    <li>php</li>
+                    <li>mysql</li>
+                    <li>figma</li>
+                  </ul>
+                </div>
+                <div class="page_url d-flex">
+                  <h4 class="bold">바로가기</h4>
+                  <ul class="d-flex">
+                    <li><a href="">사이트 바로가기</a></li>
+                    <li><a href=""><i class="fa-brands fa-figma"></i> 기획자료</a></li>
+                    <li><a href=""><i class="fa-brands fa-github"></i> 깃 코드</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide_top d-flex">
+                <img src="" alt="" class="col-4 radius_x1">
+                <div class="text_box">
+                  <h3 class="font_L">1. PUDDING (사용자)</h3>
+                  <ul>
+                    <li>레거시 PHP 문법, MYSQL을 활용해 기획부터 데이터베이스 연결까지 모든 프로세스를 경험할 수 있었던 팀 프로젝트.</li>
+                    <li>특히 이벤트의 WORDLE 미니게임 구현으로 실력을 끌어올릴 수 있었음.</li>
+                    <li>구현 : 장바구니, 이벤트, 공지사항 페이지</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="slide_bottom d-flex flex-column">
+                <div class="lang d-flex">
+                  <h4 class="bold">사용언어</h4>
+                  <ul class="d-flex">
+                    <li>html</li>
+                    <li>css</li>
+                    <li>jquery</li>
+                    <li>bootstrap</li>
+                    <li>php</li>
+                    <li>mysql</li>
+                    <li>figma</li>
+                  </ul>
+                </div>
+                <div class="page_url d-flex">
+                  <h4 class="bold">바로가기</h4>
+                  <ul class="d-flex">
+                    <li><a href="">사이트 바로가기</a></li>
+                    <li><a href=""><i class="fa-brands fa-figma"></i> 기획자료</a></li>
+                    <li><a href=""><i class="fa-brands fa-github"></i> 깃 코드</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+
+          <!-- If we need 0navigation buttons -->
+          <div class="swiper-button-prev"><i class="fa-solid fa-caret-left"></i></div>
+          <div class="swiper-button-next"><i class="fa-solid fa-caret-right"></i></div>
+        </div>
+      </section>
+      <!-- //site -->
+
+
       <article class="contact" id="contact"></article>
     </main>
     
     <footer></footer>
+    <aside class="aside_btns d-flex flex-column align-items-end">
+      <!-- <div class="btns_wrap"> -->
+        <a href="#" class="top_btn shadow_1"><i class="fa-solid fa-arrow-up"></i></a>
+        <a href="mailto: stars2302@naver.com" class="email_btn shadow_1"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/stars2302" target="_blank" class="github_btn shadow_1"><i class="fa-brands fa-github"></i></a>
+      <!-- </div> -->
+    </aside>
   </div><!-- //container -->
 
-  <aside class="aside_btns container">
-    <div class="btns_wrap">
-      <a href="#" class="top_btn shadow_1"><i class="fa-solid fa-arrow-up"></i></a>
-      <a href="mailto: stars2302@naver.com" class="email_btn shadow_1"><i class="fa-solid fa-envelope"></i></a>
-      <a href="https://github.com/stars2302" target="_blank" class="github_btn shadow_1"><i class="fa-brands fa-github"></i></a>
-    </div>
-  </aside>
 </body>
 </html>
