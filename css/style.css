@@ -184,15 +184,71 @@
   color: var(--black-color);
 }
 
+.site .slide_bottom .lang ul {
+  gap: calc(var(--base-unit)/2);
+}
+
+.site .slide_bottom .lang li {
+  padding: 0 10px;
+  border-radius: var(--border-radius1);
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-weight: 400;
+}
+
+.site .html_badge {background-color: #BF4500;}
+.site .css_badge {background-color: #25BEDF;}
+.site .jquery_badge {background-color: #D2CA04;}
+.site .bootstrap_badge {background-color: #7326A1;}
+.site .php_badge {background-color: #0058BF;}
+.site .mysql_badge {background-color: #DF8A25;}
+.site .figma_badge {background-color: #343434;}
+
+
+.site .page_url ul {
+  gap: var(--base-unit);
+  color: var(--white-color);
+}
 /* -------- //site -------- */
+
+
+/* -------- contact -------- */
+.contact {
+  margin-top: calc(var(--base-unit)*6);
+  padding: var(--base-unit2) 0;
+}
+
+.contact ul {
+  gap: var(--base-unit);
+  margin-top: var(--base-unit2);
+}
+
+.contact li {
+  position: relative;
+}
+
+.contact li+li:after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background-color: var(--black-color);
+  left: calc(var(--base-unit)/-2); top: 5px; bottom: 5px;
+}
+/* -------- //contact -------- */
+
+.footer {
+  height: var(--base-unit2);
+  color: var(--white-color);
+}
 
 
 
 /* -------- aside_btns -------- */
 .aside_btns {
-  position: sticky;
+  position: fixed;
   bottom: var(--base-unit2);
-  margin-right: 20px;
+  right: 50%;
+  margin-right: -50%;
   pointer-events: none;
 }
 

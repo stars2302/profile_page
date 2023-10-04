@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
 <body class="common_bg">
   <h1 class="logo">portfolio</h1>
@@ -171,13 +170,13 @@
                 <div class="lang d-flex">
                   <h4 class="bold">사용언어</h4>
                   <ul class="d-flex">
-                    <li>html</li>
-                    <li>css</li>
-                    <li>jquery</li>
-                    <li>bootstrap</li>
-                    <li>php</li>
-                    <li>mysql</li>
-                    <li>figma</li>
+                    <li class="html_badge">html</li>
+                    <li class="css_badge">css</li>
+                    <li class="jquery_badge">jquery</li>
+                    <li class="bootstrap_badge">bootstrap</li>
+                    <li class="php_badge">php</li>
+                    <li class="mysql_badge">mysql</li>
+                    <li class="figma_badge">figma</li>
                   </ul>
                 </div>
                 <div class="page_url d-flex">
@@ -225,8 +224,6 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
           </div>
 
           <!-- If we need 0navigation buttons -->
@@ -237,10 +234,18 @@
       <!-- //site -->
 
 
-      <article class="contact" id="contact"></article>
+      <article class="contact orange_bg" id="contact">
+        <h2 class="font_title">contact</h2>
+        <ul class="d-flex justify-content-center">
+          <li><a href="tel:+82 010-9398-2302">PHONE_ 010-9398-2302</a></li>
+          <li><a href="mailto: stars2302@naver.com">E-MAIL_ stars2302@naver.com</a></li>
+          <li><a href="https://github.com/stars2302" target="_blank">GITHUB_ github.com/stars2302</a></li>
+        </ul>
+
+      </article>
     </main>
     
-    <footer></footer>
+    <footer class="footer black_bg d-flex justify-content-center align-items-center">&copy;2023. seoyoung all rights reserved.</footer>
     <aside class="aside_btns d-flex flex-column align-items-end">
       <!-- <div class="btns_wrap"> -->
         <a href="#" class="top_btn shadow_1"><i class="fa-solid fa-arrow-up"></i></a>
@@ -250,5 +255,9 @@
     </aside>
   </div><!-- //container -->
 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

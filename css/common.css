@@ -26,7 +26,7 @@
   --border-radius3: calc(var(--border-radius1)*3);
   
   --white-color: #fff;
-  --balck-color: #000;
+  --black-color: #000;
   --blue: #6786C9;
   --green: #00C667;
   --orange: #EB7711;
@@ -90,7 +90,7 @@ body {
   background-color: var(--orange);
 }
 .black_bg {
-  background-color: var(--balck-color);
+  background-color: var(--black-color);
 }
 
 .shadow_1 {
@@ -111,7 +111,7 @@ body {
 }
 
 .font_title {
-  font-size: var(--font-XL);
+  font-size: var(--font-title);
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
