@@ -7,8 +7,9 @@
   height: calc(var(--base-unit)*2.5);
   border-radius: 0 0 var(--border-radius3) var(--border-radius3);
   position: sticky;
-  top: 0;
+  top: -1px;
   z-index: 9999;
+  transition: .3s;
 }
 
 .header.shrink {
@@ -131,7 +132,7 @@
 .skills .bar {
   height: var(--base-unit);
   margin-right: calc(var(--base-unit)/2);
-  width: 100%;
+  
 }
 /* -------- //about -------- */
 
@@ -248,8 +249,15 @@
   position: fixed;
   bottom: var(--base-unit2);
   right: 50%;
-  margin-right: -50%;
+  margin-right: -640px;
   pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.aside_btns.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .aside_btns a {
