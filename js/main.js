@@ -45,7 +45,7 @@ const swiper = new Swiper('.swiper', {
 /* AOS scroll */
 AOS.init({
   duration: 1000,
-  offset: 700
+  offset: 1000
 });
 
 
