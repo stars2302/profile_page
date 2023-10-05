@@ -21,8 +21,15 @@ skill.click(function(){
       barCount.text(now+'%');
       bar.css({width:`${now}%`});
     }
-  })
+  });
+  skill.removeClass('active');
+  $(this).addClass('active');
 });
+
+
+
+/* header link */
+
 
 
 
