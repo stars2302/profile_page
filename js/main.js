@@ -29,8 +29,28 @@ skill.click(function(){
 
 
 /* header link */
+let menu = $('.header li');
+let section = $('main section');
+menu.click(function(e){
+  e.preventDefault();
+  let idx = $(this).index();
+  let offset = section.eq(idx).offset().top;
+  $('body,html').animate({scrollTop:offset});
+});
 
-
+$(window).scroll(function(){
+  let sct = $(this).scrollTop();
+  section.each(function(){
+    if(sct > $(this).offset().top-10){
+      let idx = $(this).index();
+      menu.removeClass('active');
+      menu.eq(idx).addClass('active');
+    } else if(sct >=  $(document).height() - $(window).height() -100){
+      menu.removeClass('active');
+      menu.filter(':last-child').addClass('active');
+    }
+  });
+});
 
 
 
@@ -52,7 +72,7 @@ const swiper = new Swiper('.swiper', {
 /* AOS scroll */
 AOS.init({
   duration: 1000,
-  offset: 1000
+  offset: 400
 });
 
 
