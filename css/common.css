@@ -25,6 +25,7 @@
   --border-radius2: calc(var(--border-radius1)*2);
   --border-radius3: calc(var(--border-radius1)*3);
   
+  --common-bg: #554E4E;
   --white-color: #fff;
   --black-color: #000;
   --blue: #6786C9;
@@ -75,7 +76,7 @@ body {
 }
 
 .common_bg {
-  background-color: #554E4E;
+  background-color: var(--common-bg);
 }
 .yellow_bg {
   background-color: var(--yellow);
