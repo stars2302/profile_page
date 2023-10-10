@@ -144,6 +144,7 @@
 
 .site .swiper {
   margin-top: var(--base-unit);
+  background-color: #444238;
 }
 .site .swiper-slide {
   padding: var(--base-unit2);
@@ -198,12 +199,12 @@
   font-weight: 400;
 }
 
-.site .html_badge {background-color: #BF4500;}
+.site .html_badge {background-color: #d83808;}
 .site .css_badge {background-color: #25BEDF;}
 .site .jquery_badge {background-color: #D2CA04;}
 .site .bootstrap_badge {background-color: #7326A1;}
 .site .php_badge {background-color: #0058BF;}
-.site .mysql_badge {background-color: #DF8A25;}
+.site .mysql_badge {background-color: #f38c0e;}
 .site .figma_badge {background-color: #343434;}
 
 
@@ -314,3 +315,8 @@
   50% {transform: rotate(5deg);}
   100% {transform: rotate(-5deg);}
 }
+
+
+
+
+/*  */
