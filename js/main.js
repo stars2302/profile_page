@@ -36,6 +36,7 @@ menu.click(function(e){
   let idx = $(this).index();
   let offset = section.eq(idx).offset().top;
   $('body,html').animate({scrollTop:offset});
+  $('.header nav').removeClass('active');
 });
 
 $(window).scroll(function(){
@@ -96,3 +97,27 @@ $(window).scroll(function(){
     }
   }
 });
+
+
+
+/* header menu BTN */
+let menuBtn = $('.header .menu_btn');
+menuBtn.click(function(){
+  console.log($(this))
+  $(this).siblings('nav').toggleClass('active');
+});
+
+
+/* svg window change */
+let deco = $('.deco_item');
+
+$(window).resize(function(){
+  let windowW = $(this).innerWidth();
+  if(windowW <= 991) {
+    deco.attr('src','images/deco_item_2.svg').attr('alt','고양이 캐릭터');
+  } else{
+    deco.attr('src','images/deco_item.svg').attr('alt','털실 이미지');
+
+  }
+});
+$(window).trigger('resize');
