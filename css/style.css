@@ -164,9 +164,8 @@ body {padding-top: calc(var(--base-unit)*7);}
   padding: var(--base-unit2);
   box-sizing: border-box;
   color: var(--white-color);
-  background-color: var(--common-bg);
+  background-color: #100f0f;
   box-shadow: var(--box-shadow10);
-  border-radius: var(--border-radius3);
 }
 
 .site .swiper-slide h3 {
