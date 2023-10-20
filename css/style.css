@@ -1,4 +1,5 @@
 body {padding-top: calc(var(--base-unit)*7);}
+body.active {overflow: hidden;}
 .container.yellow_bg {padding: 0; position: relative;}
 
 
@@ -287,6 +288,8 @@ body {padding-top: calc(var(--base-unit)*7);}
 
 
 /* -------- aside_btns -------- */
+body.active .aside_btns {display: none;}
+
 .aside_btns {
   position: fixed;
   bottom: var(--base-unit2);

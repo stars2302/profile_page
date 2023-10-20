@@ -105,6 +105,7 @@ let menuBtn = $('.header .menu_btn');
 menuBtn.click(function(){
   console.log($(this))
   $(this).siblings('nav').toggleClass('active');
+  $('body').toggleClass('active');
 });
 
 
@@ -117,7 +118,7 @@ $(window).resize(function(){
     deco.attr('src','images/deco_item_2.svg').attr('alt','고양이 캐릭터');
   } else{
     deco.attr('src','images/deco_item.svg').attr('alt','털실 이미지');
-
+    $('body,nav').removeClass('active');
   }
 });
 $(window).trigger('resize');
