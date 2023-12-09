@@ -1,0 +1,73 @@
+@import 'comm';
+
+body {
+  padding-top: $base-unit*7;
+  &.active {
+    overflow: hidden;
+  }
+}
+.container.yellow_bg {padding: 0; position: relative;}
+
+/* -------- header -------- */
+.header {
+  height: calc(var(--base-unit)*2.5);
+  position: sticky;
+  top: -1px;
+  z-index: 9999;
+  transition: .3s;
+  
+  &.shrink {
+    height: $base-unit*2;
+  }
+
+  .menu_btn {
+    display: none;
+  }
+
+  .logo {
+    position: absolute;
+    top: $base-unit2 * -1;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  nav, ul {
+    height: 100%;
+  }
+
+  nav {
+    border-radius: 0 0 $border-radius3 $border-radius3;
+  }
+
+  li {
+    overflow: hidden;
+    color: $white-color;
+
+    a {
+      text-transform: uppercase;
+      position: relative;
+      transition: top .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      top: 0;
+
+      &:after {
+        content: attr(data-text);
+        position: absolute;
+        left: 0; right: 0; top: 100%; bottom: -100%;
+        transition: .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+
+      li:hover &:after {
+        top: 100%; bottom: -100%;
+      }
+    }
+
+    &:hover a,
+    &.active a {
+      top: -24px;
+      color: $blue;
+    }
+  }
+}
+/* -------- //header -------- */
+
+
