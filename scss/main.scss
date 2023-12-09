@@ -66,8 +66,9 @@ body {
       top: -24px;
       color: $blue;
     }
-  }
-}
+  }//li
+
+}//header
 /* -------- //header -------- */
 
 
@@ -84,7 +85,7 @@ body {
     line-height: 40px;
     color: $font-color;
   }
-}
+}//home
 /* -------- //home -------- */
 
 
@@ -151,9 +152,137 @@ body {
     height: $base-unit;
     margin-right: $base-unit/2;
   }
-}
+}//skill
 /* -------- //about -------- */
 
 
 /* -------- site -------- */
+.site {
+  padding-top: $base-unit2*2.5;
+
+  .swiper {
+    margin-top: $base-unit;
+
+    &-slide {
+      padding: $base-unit2;
+      box-sizing: border-box;
+      color: $white-color;
+      background-color: #100f0f;
+      box-shadow: $box-shadow10;
+
+      h3 {
+        line-height: 45px;
+      }
+      
+      img {
+        width: 330px;
+        height: 210px;
+        object-fit: cover;
+        background-color: #ddd;
+        margin-right: $base-unit;
+      }
+
+      .text_box li {
+        color: rgb(220, 220, 220);
+        list-style-type: disc;
+        margin-left: 20px;
+      }
+
+      .slide_bottom {
+        display: flex;
+        flex-direction: column;
+        margin-top: $base-unit;
+        gap: $base-unit;
+
+        h4 {
+          margin-right: $base-unit;
+        }
+
+        .lang {
+          ul { gap: $base-unit/2;}
+          li {
+            padding: 0 10px;
+            border-radius: $border-radius1;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  } //swiper
+
+  .page_url ul {
+    gap: $base-unit;
+    color: $white-color;
+
+    li {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0; bottom: 0; right: 100%;
+        height: 1px;
+        background-color: $white-color;
+        transition: .3s;
+      }
+
+      &:hover:after {
+        right: 0;
+      }
+
+      &:not(:hover) {
+        color: rgb(201, 201, 201);
+      }
+    }
+  } //page_url ul
+
+  //swiper css 변경
+  .swiper-button-prev:after, 
+  .swiper-rtl .swiper-button-next:after,
+  .swiper-button-next:after, 
+  .swiper-rtl .swiper-button-prev:after {
+    display: none;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    font-size: 50px;
+    color: $white-color;
+  }
+
+  //site 배찌 스타일
+  .html_badge {background-color: #d83808;}
+  .css_badge {background-color: #25BEDF; color: $font-color; font-weight: 700;}
+  .jquery_badge {background-color: #D2CA04; color: $font-color;font-weight: 700;}
+  .bootstrap_badge {background-color: #7326A1;}
+  .php_badge {background-color: #0058BF;}
+  .mysql_badge {background-color: #f38c0e; color: $font-color;font-weight: 700;}
+  .figma_badge {background-color: #343434;}
+} //site
 /* -------- //site -------- */
+
+
+/* -------- contact -------- */
+.contact {
+  margin-top: $base-unit3*2;
+  padding: $base-unit2 0;
+
+  ul {
+    gap: $base-unit;
+    margin-top: $base-unit2;
+
+    li {
+      position: relative;
+
+      &+li:after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        background-color: $black-color;
+        left: $base-unit/-2; top: 5px; bottom: 5px;
+      }
+    }
+  }
+}//contact
+/* -------- //contact -------- */
+
+

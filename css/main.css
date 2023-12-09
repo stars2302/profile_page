@@ -272,4 +272,133 @@ li:hover .header li a:after {
 
 /* -------- //about -------- */
 /* -------- site -------- */
-/* -------- //site -------- *//*# sourceMappingURL=main.css.map */
+.site {
+  padding-top: 150px;
+}
+.site .swiper {
+  margin-top: 30px;
+}
+.site .swiper-slide {
+  padding: 60px;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #100f0f;
+  box-shadow: 6px 6px 4px 0px rgba(0, 0, 0, 0.7);
+}
+.site .swiper-slide h3 {
+  line-height: 45px;
+}
+.site .swiper-slide img {
+  width: 330px;
+  height: 210px;
+  object-fit: cover;
+  background-color: #ddd;
+  margin-right: 30px;
+}
+.site .swiper-slide .text_box li {
+  color: rgb(220, 220, 220);
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.site .swiper-slide .slide_bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 30px;
+}
+.site .swiper-slide .slide_bottom h4 {
+  margin-right: 30px;
+}
+.site .swiper-slide .slide_bottom .lang ul {
+  gap: 15px;
+}
+.site .swiper-slide .slide_bottom .lang li {
+  padding: 0 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.site .page_url ul {
+  gap: 30px;
+  color: #fff;
+}
+.site .page_url ul li {
+  position: relative;
+}
+.site .page_url ul li:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 100%;
+  height: 1px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+.site .page_url ul li:hover:after {
+  right: 0;
+}
+.site .page_url ul li:not(:hover) {
+  color: rgb(201, 201, 201);
+}
+.site .swiper-button-prev:after,
+.site .swiper-rtl .swiper-button-next:after,
+.site .swiper-button-next:after,
+.site .swiper-rtl .swiper-button-prev:after {
+  display: none;
+}
+.site .swiper-button-next, .site .swiper-button-prev {
+  font-size: 50px;
+  color: #fff;
+}
+.site .html_badge {
+  background-color: #d83808;
+}
+.site .css_badge {
+  background-color: #25BEDF;
+  color: #131313;
+  font-weight: 700;
+}
+.site .jquery_badge {
+  background-color: #D2CA04;
+  color: #131313;
+  font-weight: 700;
+}
+.site .bootstrap_badge {
+  background-color: #7326A1;
+}
+.site .php_badge {
+  background-color: #0058BF;
+}
+.site .mysql_badge {
+  background-color: #f38c0e;
+  color: #131313;
+  font-weight: 700;
+}
+.site .figma_badge {
+  background-color: #343434;
+}
+
+/* -------- //site -------- */
+/* -------- contact -------- */
+.contact {
+  margin-top: 180px;
+  padding: 60px 0;
+}
+.contact ul {
+  gap: 30px;
+  margin-top: 60px;
+}
+.contact ul li {
+  position: relative;
+}
+.contact ul li + li:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background-color: #000;
+  left: -15px;
+  top: 5px;
+  bottom: 5px;
+}
+
+/* -------- //contact -------- *//*# sourceMappingURL=main.css.map */
