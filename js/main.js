@@ -36,7 +36,7 @@ menu.click(function(e){
   let idx = $(this).index();
   let offset = section.eq(idx).offset().top;
   $('body,html').animate({scrollTop:offset});
-  $('.header nav').removeClass('active');
+  $('.header nav, body').removeClass('active');
 });
 
 $(window).scroll(function(){
@@ -105,7 +105,8 @@ let menuBtn = $('.header .menu_btn');
 menuBtn.click(function(){
   console.log($(this))
   $(this).siblings('nav').toggleClass('active');
-  $('body').toggleClass('active');
+  $('body').addClass('active');
+  asideBtns.removeClass('show');
 });
 
 
